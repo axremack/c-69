@@ -1,0 +1,351 @@
+<tw-storydata name="C-69" startnode="60" creator="Twine" creator-version="2.2.1" ifid="D4EF451A-A616-416E-8495-6E89678CB8DF" zoom="1" format="Harlowe" format-version="2.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css?family=VT323');
+
+tw-passage {
+  color: #d34192;
+  text-align: center;
+  font-family: 'VT323';
+  font-size : 30px;
+}
+
+tw-link {
+  color: #735dc2;
+  font-weight: normal;
+}
+
+tw-link.hover {
+  color: #5fc0d3;
+}
+
+img{
+  max-width: 100%;
+}
+
+#tache{
+  text-decoration: line-through;
+}
+
+#comment{
+  color: #008800;
+}
+
+#function{
+  color: #d34192;
+}
+
+tw-passage[tags~="Note"] {
+  color: #ffffff;
+  text-align: left;
+  font-family: 'VT323';
+  font-size : 30px;
+}
+
+
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
+
+</script><tw-passagedata pid="1" name=" Introduction 2" tags="" position="201,401" size="100,100">A la fin de la soirée, comme toujours, tu passes sous le karcher pour enlever les diverses substances qu’on t’a renversé dessus avant de retourner dans ton appartement… enfin ton placard plutôt. Seul Cafard, ton fidèle cafard domestique, est là pour te réconforter. Il ne parle pas mais au moins il est là, tu es sur qu’il sait que c’est ton anniversaire.
+[[...-&gt; Introduction 3]]</tw-passagedata><tw-passagedata pid="2" name=" Introduction 3" tags="" position="341,401" size="100,100">Après quelques heures à fixer le plafond, tu es sûr de toi, trop c’est trop ! Tu ne veux plus être seul ! Tu veux pouvoir parler à quelqu’un, alors [[il te faut DES AMIS ! -&gt; Amis 1]] Mais oui c’est évident !
+
+Quoi que… finalement ce n’est peut-être pas une si bonne idée. [[Rester dans ton placard -&gt; Fin 1]] en position fœtale c’est pas mal aussi…</tw-passagedata><tw-passagedata pid="3" name=" Amis 1" tags="" position="500,499" size="100,100">Oui c’est sûr, tu peux le faire. Trouver des [[amis -&gt; Amis 2]] ça ne devrais pas être si difficile pas vrai ? Tout le monde le fait. Rien de plus simple, pas vrai ?</tw-passagedata><tw-passagedata pid="4" name=" Fin 1" tags="" position="500,302" size="100,100">Bon, très bien, tu restera dans ton placard à [[deprimer -&gt; Game Over]] jusqu&#39;à la fin de tes jours.</tw-passagedata><tw-passagedata pid="5" name=" Amis 2" tags="" position="639,500" size="100,100">Pour commencer, où vont les gens pour se faire des amis ? Il parait que les gens vont souvent dans [[les parcs-&gt; Parc 1]], d’après tes calculs c’est la solution la plus efficace. Mais dans une publicité que tu as vu une fois, il y avait des personnes heureuse dans [[une bibliothèque-&gt; Bibli 1]]... Peut être que c&#39;est là-bas que tu trouvera ton bonheur ?
+
+(set: $bibli to 0)
+(set: $parc to 0)</tw-passagedata><tw-passagedata pid="6" name=" Parc 1" tags="" position="802,402" size="100,100">&lt;img src=&quot;image/parc.gif&quot;&gt;
+
+Les parcs en automne, c’est très poétique selon ta base de données sur la littérature classique.
+Tu n’as pas une définition précise de ce que sont les couleurs mais en tout cas, la teinte moyenne des feuilles est un #C46200 de toute beauté.
+[[...-&gt; Parc 2]]
+(set: $parc to 1)</tw-passagedata><tw-passagedata pid="7" name=" Bibli 1" tags="" position="801,598" size="100,100">&lt;img src=&quot;image/library.jpg&quot;&gt;
+
+Oh ! Ça ressemble vraiment à la publicité que tu as vu, dans laquelle les gens riaient aux éclats. Il y a des livres partout et c’est très lumineux. Ton odorat artificiel t’indiques même qu’il y a une odeur de vieux cuir et de papier poussiéreux, un parfum de synthèse évidemment.
+[[...-&gt; Bibli 2]]
+(set: $bibli to 1)</tw-passagedata><tw-passagedata pid="8" name=" Parc 2" tags="" position="941,401" size="100,100">&lt;img src=&quot;image/parc.gif&quot;&gt;
+
+Tes calculs étaient bons, il y a plein de monde ! Mais tout les humains que tu vois ont des animaux… Ils te terrorisent donc peut être que tu devrais plutôt te tourner vers le [[soufflotron -&gt; Souffleur 1]] (un robot souffleur de feuilles) que tu vois un peu plus loin ?
+(if: $bibli is 0)[Ou alors tu pourrais tenter ta chance à [[la bibliothèque-&gt; Bibli 1]], aucune chance de se faire mordre là bas.]</tw-passagedata><tw-passagedata pid="9" name=" Bibli 2" tags="" position="940,599" size="100,100">&lt;img src=&quot;image/library.jpg&quot;&gt;
+
+Par contre, tout le monde paraît très concentré, tu veux te faire des amis mais pas déranger… Mais il y a quand même le [[biblio-bot -&gt; Bibliot 1]] qui te fixe, lui parler serais peut être une bonne idée ?
+(if: $parc is 0)[Finalement, peut être que tu devrais aller [[au parc-&gt; Parc 1]], au moins les gens seraient détendus non ? ]</tw-passagedata><tw-passagedata pid="10" name=" Souffleur 1" tags="" position="1075,399" size="100,100">&lt;img src=&quot;image/parc.gif&quot;&gt;
+
+Non, un peu de courage que diable ! Tu peux le faire, tu as autant de bits que lui, pas de raison d’être intimidé. Prends ton binaire à deux mains et fonce ! Mais comment l’interpeller ? Être [[direct -&gt; D P 1]] est sûrement la solution qui te corresponds le mieux, mais il risque de refuser ton amitié… Le [[contraindre à t’aimer -&gt; V P 1]] par la force c’est pas mal aussi, en tout cas c’est moins risqué. Tu pourrais éventuellement lui offrir un [[cadeau-&gt; G P 1]] ? Aaaaah quel choix cornélien.</tw-passagedata><tw-passagedata pid="11" name=" Bibliot 1" tags="" position="1078,602" size="100,100">&lt;img src=&quot;image/library.jpg&quot;&gt;
+
+Non, un peu de courage que diable ! Tu peux le faire, tu as autant de bits que lui, pas de raison d’être intimidé. Prends ton binaire à deux mains et fonce ! Mais comment l’interpeller ? Être [[direct -&gt; D B 1]] est sûrement la solution qui te corresponds le mieux, mais il risque de refuser ton amitié… Le [[contraindre à t’aimer -&gt; V B 1]] par la force c’est pas mal aussi, en tout cas c’est moins risqué. Tu pourrais éventuellement lui offrir un [[cadeau -&gt; G B 1]] ? Aaaaah quel choix cornélien.</tw-passagedata><tw-passagedata pid="12" name=" D B 1" tags="" position="1246,602" size="100,100">Oui, être direct est certainement la solution la plus sûre, au moins personne ne risque de pleurer comme ça. Tu t’approches de lui et tu dis ensuite, de ta voix la plus neutre [[*“Sois mon ami s’il te plait”*-&gt; D B 2]].</tw-passagedata><tw-passagedata pid="13" name=" V B 1" tags="" position="1246,712" size="100,100">Oui, la force ça te connais bien. Puis là où tu travailles il y a plein de gens qui deviennent ami après s’être battu, ça veut forcément dire que ça marche. 
+Tu agrippes la tête du bibliothécaire mais automatiquement une alarme retentit. Avant que tu me te rendes compte de ce qui se passe, des robots de sécurité t’emmène dehors et t’ordonnes de ne plus jamais entrer dans la bibliothèque. 
+Et un plan d’amitié qui tombe à l’eau ! Pourtant tu avais tout essayé.
+[[... -&gt; Réalisation]]</tw-passagedata><tw-passagedata pid="14" name=" G B 1" tags="" position="1245,822" size="100,100">Les cadeaux ça marche toujours ! Il faut trouver quelque chose qui lui fasse plaisir… de l’huile de moteur ? Non, trop cliché. Un rouage qui brille ? Il doit déjà en avoir plein… Ah mais oui ! [[Un stylo-&gt; G B 2]] ! Ça plaît aux bibliothécaires ça.</tw-passagedata><tw-passagedata pid="15" name=" D P 1" tags="" position="1244,181" size="100,100">Oui, être direct est certainement la solution la plus sûre, au moins personne ne risque de pleurer comme ça. Tu t’approches de lui et tu dis ensuite, de ta voix la plus neutre [[*“Sois mon ami s’il te plait”*-&gt; D P 2]].</tw-passagedata><tw-passagedata pid="16" name=" V P 1" tags="" position="1245,289" size="100,100">Oui, la force ça te connais bien. Puis là où tu travailles il y a plein de gens qui deviennent ami après s’être battu, ça veut forcément dire que ça marche. Tu agrippes le bras du robot souffleur mais en tirant, son bras s’arrache. Son alarme d’auto défense retentit, je crois qu’il t’en veut...
+Bon, ce ne sera pas lui ton nouvel ami.
+[[... -&gt; Réalisation]]</tw-passagedata><tw-passagedata pid="17" name=" G P 1" tags="" position="1245,399" size="100,100">Les cadeaux ça marche toujours ! Il faut trouver quelque chose qui lui fasse plaisir… l’huile de moteur ? Non, trop cliché. Un rouage qui brille ? Il doit déjà en avoir plein… Ah mais oui ! [[Une feuille-&gt; G P 2]] !</tw-passagedata><tw-passagedata pid="18" name=" D P 2" tags="" position="1365,182" size="100,100">Il ne t’entend pas, alors tu te mets évidemment à hurler. Il arrête son souffleur et dis *“Je ne suis pas programmé cette tâche”* sans même se retourner.
+Quel ingrat, ça tombe bien, tu n’as plus envie d’être [[ami avec lui-&gt; Réalisation]].</tw-passagedata><tw-passagedata pid="19" name=" G P 2" tags="" position="1369,402" size="100,100">&lt;img src=&quot;image/leave.gif&quot;&gt;
+
+Tu étends ton bras droit pour attraper une feuille puis tu t’approches mais alors que tu es à 5 mètres de ton futur meilleur ami, il se retourne violemment et souffle ton cadeau. 
+Quel ingrat, si il n’accepte pas ton cadeau tu n’as pas à être [[ami avec lui-&gt; Réalisation]].</tw-passagedata><tw-passagedata pid="20" name=" D B 2" tags="" position="1367,603" size="100,100">Avant que tu ne finisses ta phrase le robot te lance sèchement *“CHUT ! C’est une bibliothèque ici”*.
+Quel rabat-joie ! Aucune chance que tu veuilles être ami avec un [[loser pareil-&gt; Réalisation]].</tw-passagedata><tw-passagedata pid="21" name=" G B 2" tags="" position="1369,821" size="100,100">&lt;img src=&quot;image/pen.png&quot;&gt;
+
+Tu t’approches du comptoir et tu prends le premier stylo à ta portée, puis tu le tends vers ton futur meilleur ami pour la vie. Malheureusement, il le prend de tes mains et le repose où tu l’avais pris.
+Quel rabat joie ! Tu ne veux pas être [[ami avec lui-&gt; Réalisation]], c’est sûr.</tw-passagedata><tw-passagedata pid="22" name=" Réalisation" tags="" position="1601,506" size="100,100">Cette première tentative n’a pas été fructueuse, c’est le moins qu’on puisse dire, ton seul ami reste encore et toujours Cafard. Si seulement il n’était pas muet. En tout cas, les robots ne sont clairement pas des bons amis !
+Mais alors c’est simple, tu n’as qu’à être ami avec des humains ! Eux ils rient et ils ont des amis dans les publicités ! Quel plan parfait. Il n’y a plus qu’a [[trouver comment-&gt; Réalisation 1.5]].</tw-passagedata><tw-passagedata pid="23" name=" Réalisation 2" tags="" position="1728,507" size="100,100">Alors pour être humain il faut déjà [[te trouver un prénom-&gt; Prénom 1]] : tous les humains que tu connais en ont un, et il n’y a pas de chiffres dedans. 
+Il faut aussi avoir des [[habits -&gt; Habit 1]] et une [[belle coiffure-&gt; Cheveux 1]]. 
+Mais il manque des choses… Ah oui ! Les tas de chair boivent tous du [[café -&gt; Café 1]] non ? Si ils le font, tu dois le faire aussi. 
+Pendant que tu travailles tu entends aussi très souvent des humains [[siffler-&gt; Siffler 1]], apprendre cette technique est aussi une bonne idée, pas vrai ?
+(set: $habit to &quot;false&quot;)
+(set: $cafe to &quot;false&quot;)
+(set: $cheveux to &quot;false&quot;)
+(set: $siffler to &quot;false&quot;)
+(set: $prenom to &quot;false&quot;)
+(set: $name to &quot;C&quot;)</tw-passagedata><tw-passagedata pid="24" name=" Habit 1" tags="" position="2921,896" size="100,100">C’est vrai que les habits sont essentiels pour les humains. Il parait que c’est pour se protéger du froid mais peu importe, même sans avoir froid tu DOIS t’en procurer. Tu roules un peu dans la rue à la recherche d’une vitrine présentant des habits. Après quelques minutes d’analyse intensive, tu tombes sur deux magasins côte-à-côte. Il y a du tissu dans les deux vitrines, c’est bon signe : alors, [[droite -&gt; Droite 1]] ou [[gauche-&gt; Gauche 1]] ?
+(set: $habit to &quot;true&quot;)</tw-passagedata><tw-passagedata pid="25" name=" Café 1" tags="" position="1938,674" size="100,100">Le [[café -&gt; Café 2]] est un élément essentiel à l&#39;humanité selon tes observations. L&#39;alcool aussi d&#39;ailleurs, mais ce n&#39;est pas la nuit donc le moment n&#39;est pas idéal. Le problème c&#39;est que le café est censé se consommer par la bouche, non ? Or toi tu n&#39;as pas de bouche... Bon, tu aviseras au moment venu.
+(set: $cafe to &quot;true&quot;)</tw-passagedata><tw-passagedata pid="26" name=" Cheveux 1" tags="" position="2439,974" size="100,100">Pour vraiment te fondre dans la masse des tas de chair tu va devoir trouver des cheveux, c&#39;est certain. En cherchant *&quot;Cheveux pour les chauves&quot;* tu as rapidement trouvé deux adresses près de toi : un [[magasin -&gt; Haut de gamme]] noté 5 étoiles par les utilisateurs et un [[autre -&gt; Bas de gamme 1]] noté 1 étoile... Mais qui ne tente rien n&#39;a rien !
+(set: $cheveux to &quot;true&quot;)</tw-passagedata><tw-passagedata pid="27" name=" Siffler 1" tags="" position="3016,295" size="100,100">C’est certain, si tu apprends à siffler tu auras tous les amis que tu veux. La question maintenant c’est où apprendre ? Il n’existe pas de cours de sifflement pour robot… Peut-être qu’[[espionner un humain -&gt; Espion]] te permettrais de comprendre la technique ? En même temps, un [[tuto Youtube -&gt; YT]] ferais surement l’affaire.
+(set: $siffler to &quot;true&quot;)</tw-passagedata><tw-passagedata pid="28" name=" Prénom 1" tags="" position="2374,12" size="100,100">Pour être humain il faut avoir un prénom. Où en trouver un ? Les humains n’ont pas besoin de chercher le leur mais évidemment c’est plus compliqué pour toi. Peut-être que [[demander à des personnes -&gt; P Rue]] dans la rue t’aiderais ? Ou alors tu pourrais chercher dans un [[livre -&gt; Dico 1]] typiquement humain pour trouver de l’inspiration.
+
+(set: $prenom to &quot;true&quot;)</tw-passagedata><tw-passagedata pid="29" name=" P Rue" tags="" position="2295,149" size="100,100">Oui, des humains ne pourraient que t’aider dans ta recherche, il faut aller au contact de ta cible. 
+Tu te retournes et interpelles un petit homme en lui disant sobrement [[*&quot;Ton nom, humain&quot;*-&gt; P Rue 2]]. Il te regarde un peu bizarrement, ton scanner d’émotion t’indique une hausse de son rythme cardiaque : il doit surement être content de te rencontrer.</tw-passagedata><tw-passagedata pid="30" name=" Dico 1" tags="" position="2489,147" size="100,100">Dans un livre il y aura plus de possibilité, puis tu n’es pas encore prêt à parler à des tas de chairs, ils sont intimidants. Tu te souviens d’avoir vu un livre très humain dans le bureau de ton patron une fois : le [[dictionnaire-&gt; Dico 2]].</tw-passagedata><tw-passagedata pid="31" name=" Axe" tags="" position="2386,646" size="100,100">(if: $habit is &quot;false&quot; OR $cafe is &quot;false&quot; OR $cheveux is &quot;false&quot; OR $siffler is &quot;false&quot; OR $prenom is &quot;false&quot;)[ Pour devenir un vrai humain, il ne te reste plus qu&#39;à : ]
+(if: $habit is &quot;false&quot;)[ [[T&#39;habiller-&gt; Habit 1]] ](else:)[ &lt;span id=&quot;tache&quot;&gt;T&#39;habiller&lt;/span&gt; ]
+(if: $cafe is &quot;false&quot;)[ [[Boire du café-&gt; Café 1]] ](else:)[ &lt;span id=&quot;tache&quot;&gt;Boire du café&lt;/span&gt; ]
+(if: $cheveux is &quot;false&quot;)[ [[Avoir une belle coiffure-&gt; Cheveux 1]] ](else:)[ &lt;span id=&quot;tache&quot;&gt;Avoir une belle coiffure&lt;/span&gt; ]
+(if: $siffler is &quot;false&quot;)[ [[Apprendre à siffler-&gt; Siffler 1]] ](else:)[ &lt;span id=&quot;tache&quot;&gt;Apprendre à siffler&lt;/span&gt; ]
+(if: $prenom is &quot;false&quot;)[ [[Te trouver un prénom-&gt; Prénom 1]] ](else:)[ &lt;span id=&quot;tache&quot;&gt;Te trouver un prénom&lt;/span&gt; ]
+
+(if: $habit is &quot;true&quot; AND $cafe is &quot;true&quot; AND $cheveux is &quot;true&quot; AND $siffler is &quot;true&quot; AND $prenom is &quot;true&quot;)[ Wow, tu as tout d&#39;un vrai humain (if: $name is &quot;Donatien&quot;)[Donatien](elseif: $name is &quot;Cristallin&quot;)[Cristallin](elseif: $name is &quot;Tabouret&quot;)[Tabouret] ! Maintenant tu es prêt à aller [[ rencontrer des humains -&gt; Chemin Fin]] pour devenir leur meilleur ami pour la vie.]
+
+
+
+
+
+
+
+
+
+</tw-passagedata><tw-passagedata pid="32" name=" T" tags="" position="2684,263" size="100,100">Sur Internet il parait que la lettre la plus populaire chez les humains est le T. Alors cherche dans la section de la lettre T, tu auras un prénom parfait ! Selon tes calculs il y a 1504 mots commençant par un T, et en appliquant un filtre aléatoire tu obtiens...
+
+|next)[
+Tabouret !
+]
+{(live: 4s)[
+	(show: ?next)
+	(stop:)
+]}
+|next2)[
+C&#39;est un [[prénom parfait-&gt; Axe]], ça sonne très humain.
+]
+{(live: 6s)[
+	(show: ?next2)
+	(stop:)
+]}
+(set: $name to &quot;Tabouret&quot;)</tw-passagedata><tw-passagedata pid="33" name=" C" tags="" position="2567,264" size="100,100">Oui, Cafard est ton meilleur ami pour l&#39;instant. Il sera tellement content quand tu lui dira ton nouveau nom ! Selon tes calculs il y a 2622 mots commençant par un C, et en appliquant un filtre aléatoire tu obtiens...
+
+|next)[
+Cristallin !
+]
+{(live: 4s)[
+	(show: ?next)
+	(stop:)
+]}
+|next2)[
+C&#39;est un [[prénom parfait-&gt; Axe]], ça sonne très humain.
+]
+{(live: 6s)[
+	(show: ?next2)
+	(stop:)
+]}
+(set: $name to &quot;Cristallin&quot;)</tw-passagedata><tw-passagedata pid="34" name=" Espion" tags="" position="2928,420" size="100,100">Ca tombe bien, à ce moment un humain passe à coté de toi en sifflotant. Bon, c&#39;est une facilité scénaristique, en réalité tu as attendu plusieurs heures sans bouger, dans la rue, avant de croiser un siffleur.
+Peu importe, maintenant tu es prêt à t&#39;instruire ! Tu te [[précipites -&gt; Espion 2]] devant l&#39;humain afin de mieux voir sa bouche.</tw-passagedata><tw-passagedata pid="35" name=" YT" tags="" position="3095,422" size="100,100">Sur Youtube on trouve de tout, pas vrai ? Et bien pas de chance, après moultes recherches tu n&#39;as pas trouvé de vidéos de robot apprenant à siffler.
+[[... -&gt; Siffler soluce]]</tw-passagedata><tw-passagedata pid="36" name=" Siffler soluce" tags="" position="3095,548" size="100,100">En desespoir de cause, tu décides de chercher sur le web *&quot;Je suis un robot et j&#39;aimerais siffler s&#39;il vous plait&quot;*. Tu ouvres le premier résultat et tu tombe enfin sur le tutoriel de tes rêves : il s&#39;avère que tu doit seulement installer un [[plugin-&gt; Siffler soluce 2]]. </tw-passagedata><tw-passagedata pid="37" name=" Réalisation 1.5" tags="" position="1656,630" size="100,100">&lt;img src=&quot;image/street.gif&quot;&gt;
+
+Après avoir erré dans les rues de New New York pendant quelques minutes, tu aperçois enfin une solution ! Tu vois en effet au loin deux personnes se faisant un câlin parce qu’ils ont les mêmes chaussures. C’est une évidence, pour être ami avec des humains, il faut [[être comme eux-&gt; Réalisation 2]] !</tw-passagedata><tw-passagedata pid="38" name=" Chemin Fin" tags="" position="3330,599" size="100,100">Il ne te reste plus qu&#39;à trouver des humains sympathiques et à leur parler.
+Mais [[où les trouver-&gt; Chemin Fin 2]] ? </tw-passagedata><tw-passagedata pid="39" name=" P Rue 2" tags="" position="2297,267" size="100,100">Il te dit alors timidement *&quot;D…Do…Donatien&quot;*. Tu as accompli ta mission : à présent ton prénom humain est [[Donatien-&gt; Axe]].
+(set: $name to &quot;Donatien&quot;)</tw-passagedata><tw-passagedata pid="40" name=" Dico 2" tags="" position="2614,148" size="100,100">Tu te rends donc sur le web pour trouver une version numérisée, mais maintenant il faut trouver la page à étudier. Peut-être les pages de la [[lettre C-&gt; C]] ? Pour avoir la même initiale que Cafard.
+Ou alors tu pourrais aller directement à la section de la [[lettre la plus populaire -&gt; T]] chez les humains.</tw-passagedata><tw-passagedata pid="41" name=" Introduction" tags="" position="55,400" size="100,100">&lt;img src=&quot;image/night.gif&quot;&gt;
+
+Nous sommes le 22 septembre 2162, le jour de ton anniversaire, C-69. Encore une fois tu restes à l’entrée de Kzingah, la boîte de nuit la plus huppé de New New York. Il fait sûrement froid étant donné que tout le monde porte un manteau.
+Sans chair évidemment tu ne peux pas sentir le froid… mais tu sens la solitude, même avec ton cœur de robot.
+[[...-&gt; Introduction 2]]</tw-passagedata><tw-passagedata pid="42" name=" Espion 2" tags="" position="2928,522" size="100,100">Malheureusement, tu l&#39;as effrayé à cause de ta carrure et du bruit de tes composants. Ce n&#39;est pas aujourd&#39;hui que tu va apprendre à siffler avec un humain...
+Le [[un tuto Youtube -&gt; YT]] n&#39;était peut-être pas une si mauvaise idée après tout.</tw-passagedata><tw-passagedata pid="43" name=" Siffler soluce 2" tags="" position="3100,655" size="100,100">Après 35.6547 secondes d&#39;installation, tu sais officiellement siffler ! [[Bravo-&gt; Axe]].</tw-passagedata><tw-passagedata pid="44" name=" Droite 1" tags="" position="3008,1015" size="100,100">Le magasin est très mal organisé, ça te cours sur les circuits mais tu vas devoir faire avec. Il y a beaucoup de couleurs et de textures différentes… Wow c’est très beau…
+
+|next)[
+Mais cette désorganisation est affreuse ! Tu ne peux pas rester ici une minute de plus ! Tu prends le premier bout de tissu qui passe sous ton bras mécanique, sans même le regarder, tu payes virtuellement et [[tu sors en trombe-&gt; Droite 2]].
+]
+{(live: 4s)[
+	(show: ?next)
+	(stop:)
+]}</tw-passagedata><tw-passagedata pid="45" name=" Gauche 1" tags="" position="2862,1013" size="100,100">A peine rentré dans la boutique de gauche, une cyber-vendeuse t’accostes en disant *“Que puis-je faire pour vous ? Une chemise pour votre patron peut être ?”*. Sa voix niaise t’insupporte, alors tu vas essayer de couper court à la conversation. Tu lui indiques que tu viens pour toi, pas pour ton patron.
+[[... -&gt; Gauche 2]]</tw-passagedata><tw-passagedata pid="46" name=" Droite 2" tags="" position="3124,1016" size="100,100">&lt;img src=&quot;image/droite.png&quot; width=&quot;300px&quot; height=&quot;auto&quot;&gt;
+
+Après avoir repris tes esprits tu regarde ton achat. Après une rapide analyse, il s&#39;avère que c&#39;est un [[rideau-&gt; Axe]]. Ce n&#39;est pas à proprement parler un habit, certes, mais ça suffira bien.
+En plus la couleur te va au teint.</tw-passagedata><tw-passagedata pid="47" name=" Gauche 2" tags="" position="2860,1122" size="100,100">Tu crois comprendre qu’elle te prend pour un fou : elle ne comprends pas tes aspirations. Cependant, peut être que son expertise serait de bon aloi, elle doit en voir passer des humains… Lui [[demander son aide -&gt; Vendeuse]] ou faire confiance à ton [[instinct-&gt; Instinct]] ? Telle est la question.</tw-passagedata><tw-passagedata pid="48" name=" Vendeuse" tags="" position="2811,1232" size="100,100">Bonne idée, ton instinct n&#39;est pas encore très affuté. Tu lui demande de te trouver un vêtement qui fasse humain, mais en précisant bien que tu préférerais qu’elle ne parle pas. Elle te tend alors l’objet qui allait changer ta vie…
+|next)[
+Une [[veste en cuir-&gt; Axe]] ! Parfaitement à ta taille.
+Une bonne étape de faite !
+]
+{(live: 4s)[
+	(show: ?next)
+	(stop:)
+]}
+</tw-passagedata><tw-passagedata pid="49" name=" Instinct" tags="" position="2932,1231" size="100,100">Comme ça au moins tu n&#39;auras pas à supporter la voix de la cyber-vendeuse une minute de plus. Ca ne doit pas être si compliqué de s&#39;habiller comme un humain, tu n&#39;as qu&#39;à choisir quelque chose de coloré... ou avec un motif peut-être ? Voila, tu as trouvé le vêtement parfait :
+|next)[
+&lt;img src=&quot;image/gauche.jpg&quot; height=&quot;auto&quot;&gt;
+Une [[chemise -&gt; Axe]] avec de belles fleurs. Il y a même des froufrous ! Avec ça tu va faire un malheur.
+]
+{(live: 4s)[
+	(show: ?next)
+	(stop:)
+]}
+</tw-passagedata><tw-passagedata pid="50" name=" Café 2" tags="" position="1938,782" size="100,100">Mais où trouver du café ? Il te semble qu&#39;il y a des [[machines à café -&gt; Machine 1]] un peu partout dans les batiments de la ville. Mais tu aperçois quand même une enseigne avec marqué &quot;Café&quot; en gros : peut-être que tu ferais mieux d&#39;aller [[là-bas-&gt; Coffee 1]]? Tu pourrais aussi [[observer les personnes -&gt; Café Rue 1]] dans la rue qui possèdent cette boisson, avec un peu de chance tu tomberas sur le meilleur endroit pour boire du café.</tw-passagedata><tw-passagedata pid="51" name=" Machine 1" tags="" position="1802,888" size="100,100">Solution classique. Si je ne te connaissais pas je dirait que tu est prévisible... Mais bref. Trouver une machine à café ne devrait pas être bien compliqué, il doit bien y avoir une application pour ça.
+Ah oui ! Tu as trouvé [[MachineACaféPrèsDeChezToi -&gt; Machine 2]] sur le Play Store, parfait.</tw-passagedata><tw-passagedata pid="52" name=" Coffee 1" tags="" position="1938,905" size="100,100">&lt;img src=&quot;image/coffee.gif&quot;&gt;
+
+Bon choix, en plus l&#39;enseigne brille, ça te donne confiance. Tu rentres dans ce café pour commander. Tout se passe bien, le barista-bot est sympathique... peut-être que tu pourrais devenir ami avec lui ? 
+Non, ne te disperses pas, tu veux être ami avec un HUMAIN.
+Bref, tu commandes ton café et il t&#39;es servi exactement 2 minutes 31 secondes et 654 centièmes.
+|next)[
+Rien de spécial ne se passe.
+
+Bravo tu es parvenu à [[ne pas tout gacher-&gt; Axe]].
+]
+{(live: 6s)[
+	(show: ?next)
+	(stop:)
+]}</tw-passagedata><tw-passagedata pid="53" name=" Café Rue 1" tags="" position="2071,887" size="100,100">C&#39;est en téléchargeant des fichiers malveillants qu&#39;on devient contaminé par des virus informatiques, comme dis le proverbe. Donc si tu suis des humains constamment tu finiras certainement par leur ressembler. Tu commences donc à [[suivre-&gt; Café Rue 2]], de loin, une femme blonde avec un Frappucino à la cannelle (oui, ton odorat artificiel est puissant).</tw-passagedata><tw-passagedata pid="54" name=" Café Rue 2" tags="" position="2073,997" size="100,100">Une idée te viens tout à coup, alors que tu commençais à t&#39;impatienter et que la jeune femme a posé son gobelet pour téléphoner. Et si tu prenais tout simplement son café ? Avant même que moi, ta conscience artificielle, n&#39;ai eu le temps de te dire que c&#39;était une mauvaise idée, tu avais déja [[volé la boisson -&gt; Café Rue 3]] de cette pauvre dame.</tw-passagedata><tw-passagedata pid="55" name=" Café Rue 3" tags="" position="2075,1105" size="100,100">Finalement il s&#39;avère que les robots aussi sont capables de boire, par je ne sais quelle facilité scénaristique. Mais ton café était amer, c&#39;est surement le goût de la culpabilité... Honte à toi (if: $name is &quot;Donatien&quot;)[Donatien](elseif: $name is &quot;Cristallin&quot;)[Cristallin](elseif: $name is &quot;Tabouret&quot;)[Tabouret](elseif: $name is &quot;C&quot;)[C-69].
+[[... -&gt; Axe]]</tw-passagedata><tw-passagedata pid="56" name=" Machine 2" tags="" position="1802,999" size="100,100">(set:$chance = (random:1,6))
+L&#39;application t&#39;indiques qu&#39;il y a une machine dans le centre commercial à deux minutes de ta position actuelle. Tu t&#39;y rends donc très vite : tu as hâte !
+|next)[
+Une fois arrivé, tu vois la machine a café tant attendue face à toi. Mais il y a un panneau &quot;Hors Service&quot; dessus, alors tu décides de faire simple : (if: $chance is 1)[[[te brancher -&gt; Machine Fin]]](else:)[[[te brancher -&gt; Machine Soluce]]]à elle et la forcer à te donner un café. Comptes sur ta chance, ces machines sont réputés pour être capricieuses...
+]
+{(live: 4s)[
+	(show: ?next)
+	(stop:)
+]}</tw-passagedata><tw-passagedata pid="57" name=" Machine Fin" tags="" position="1739,1114" size="100,100">Et bien aujourd&#39;hui ce n&#39;est pas ton jour de chance ! Je t&#39;avais prévenu pourtant, maintenant toute ta mémoire est corrompue. Tu va devoir faire un [[reformatage complet -&gt; Game Over]] malheureusement, à la prochaine C-69.</tw-passagedata><tw-passagedata pid="58" name=" Machine Soluce" tags="" position="1862,1113" size="100,100">Ouf, tu as eu de la chance ! Ton [[café est servi-&gt; Axe]]. Finalement il s&#39;avère que les robots aussi sont capables de boire, par je ne sais quelle facilité scénaristique. En tout cas il n&#39;était pas mauvais.</tw-passagedata><tw-passagedata pid="59" name=" Game Over" tags="" position="723,1047" size="100,100">&lt;img src=&quot;image/game over.png&quot;&gt;
+
+[[function Redemarrage(); -&gt; Start]]</tw-passagedata><tw-passagedata pid="60" name=" Start" tags="" position="53,287" size="100,100">&lt;img src=&quot;image/glitch.gif&quot;&gt;
+
+Enclenchement de la fonction Narration necessaire.
+
+[[function Narration(); -&gt; Introduction]]
+
+[[fin -&gt; Chemin Fin]]</tw-passagedata><tw-passagedata pid="61" name=" Haut de gamme" tags="" position="2383,1083" size="100,100">C&#39;est le choix le plus judicieux selon tes informations. Tu arrives devant le magasin en 2 coups de chenilles, mais Ô malheur ! Ô desespoir ! Tu aperçois les prix des perruques dans la devanture... C&#39;est beaucoup trop cher pour toi.
+Et bien pas le choix, tu va devoir aller dans [[l&#39;autre magasin-&gt; Bas de gamme 1]].</tw-passagedata><tw-passagedata pid="62" name=" Bas de gamme 1" tags="" position="2496,1084" size="100,100">Tu arrives à cette boutique et tu rentres : elle est petite et un peu sale, mais pas le choix, tu dois réussir ta mission coûte que coûte !
+Il n&#39;y a même pas de cyber-vendeur, juste une vieille femme à sa caisse. Elle te dit *&quot;Qu&#39;est-ce que tu fais là le robot ?&quot;* de manière aggressive.
+
+Elle fais 1 mètre 53 mais elle t&#39;intimides beaucoup.
+|next)[
+Sans un mot tu [[sors du magasin-&gt; Axe]]... Finalement être chauve c&#39;est pas si mal.
+]
+{(live: 6s)[
+	(show: ?next)
+	(stop:)
+]}</tw-passagedata><tw-passagedata pid="63" name=" Chemin Fin 2" tags="" position="3442,599" size="100,100">&lt;img src=&quot;image/rue.gif&quot;&gt;
+
+Alors que la nuit commence à tomber, tu as un éclair de génie : un bar ! Pour rencontrer des gens, il faut boire : ça te rendrais encore plus humain, c&#39;est certain.
+Tu es déja passé devant le [[&quot;Delta&quot;-&gt; Delta]], tu t&#39;en souviens parce que la devanture brillait, pourquoi ne pas aller là-bas ?
+Sinon il y a aussi le [[&quot;Zaxxon&quot;-&gt; Zaxxon]], qui est beaucoup plus branché mais un peu moins scintillant... Que faire ?</tw-passagedata><tw-passagedata pid="64" name=" Delta" tags="" position="3560,539" size="100,100">&lt;img src=&quot;image/delta.gif&quot;&gt;
+
+Opter pour le solution la plus brillante : je te reconnais bien là. Tu te rends donc au &quot;Delta&quot;, un petit bar dans le quartier calme de la ville. Vite, va à [[l&#39;intérieur-&gt; Bar 1]] pour découvrir tes nouveaux amis !</tw-passagedata><tw-passagedata pid="65" name=" Zaxxon" tags="" position="3560,647" size="100,100">&lt;img src=&quot;image/zaxxon.gif&quot;&gt;
+
+Opter pour le solution la plus sûre ? Ca ne te ressemble pas tellement, mais soit. Tu te rends donc au &quot;Zaxxon&quot;, un grand bar avec des bornes d&#39;arcades vintage dans le quartier chaud de New New York. Vite, va à l&#39;intérieur pour découvrir tes nouveaux amis !
+
+|next)[
+Tu rentres et ne t&#39;attardes pas sur la partie &quot;Jeu vidéo&quot; de ce bar, tu fonces directement au fond de la première pièce pour rentrer dans la [[caverne à alcool-&gt; Bar 1]], qui doit surement regorger d&#39;humains !
+]
+{(live: 6s)[
+	(show: ?next)
+	(stop:)
+]}</tw-passagedata><tw-passagedata pid="66" name=" Bar 1" tags="" position="3702,601" size="100,100">&lt;img src=&quot;image/pub.gif&quot; width=&quot;400px&quot; height=&quot;auto&quot;&gt;
+
+Ah, ce soir il n&#39;y a pas beaucoup de monde. Tu aperçois quand même deux humains dans la pièce : un [[homme-&gt; Parler H]] affalé sur le comptoir et une [[jeune fille-&gt; Parler F]] installée à une table, seule, avec son téléphone. Tu pourrais directement aller leur parler... où alors aller [[boire-&gt; Boire]] un peu avant pour te donner du cran ?</tw-passagedata><tw-passagedata pid="67" name=" Parler H" tags="" position="3843,604" size="100,100">(if: $alcool is &quot;oui&quot;)[*&quot;EH SALuuuuuut comapogn... COMPAGNOOON ! Tu veux être mon amiiiii pour la viiiie ?&quot;*
+Bon il veut pas répondre ! *Hip* [[Secoues-le-&gt; Parler H 2]] un peu eheheh.](else:)[Tu t&#39;approches de l&#39;homme, il sent l&#39;alcool à 90° et la cigarette. Tu décides d&#39;engager la conversation : [[*&quot;Bonjour humain, veux-tu être mon ami s&#39;il te plait ?&quot;*-&gt; Parler H 2]]].</tw-passagedata><tw-passagedata pid="68" name=" Parler F" tags="" position="3842,718" size="100,100">(if: $alcool is &quot;oui&quot;)[*&quot;EH SALuuuuuut madoiselme... MADEMOISELLE ! Tu veux être mon amiiiii pour la viiiie ?&quot;*
+*Hip* V&#39;la t&#39;y pas qu&#39;elle te [[regarde bizarre-&gt; Parler F 2]] !](else:)[Tu t&#39;approches de la jeune fille, elle fixe son Zoom3000, le dernier téléphone à le mode. Tu décides d&#39;engager la conversation : [[*&quot;Bonjour humaine, veux-tu être mon ami s&#39;il te plait ?&quot;*-&gt; Parler F 2]]]</tw-passagedata><tw-passagedata pid="69" name=" Boire" tags="" position="3840,489" size="100,100">Tu n&#39;es peut-être pas encore prêt à parler à des humains, même avec tes beaux vêtements et toutes les autres choses qui te font ressembler à un tas de chair. Après un verre ça ira mieux.
+Tu va au comptoir et le serveurotron regarde avec insistance... Tu comprends rapidement qu&#39;il attends que tu commandes.
+Quelque chose de [[fort-&gt; Vodka]] pourrais t&#39;aider à te faire des amis, en tout cas c&#39;est ce que les humains disent souvent à ton travail. Cependant, tu remarque que l&#39;homme à coté de toi a commandé une [[bière-&gt; Bière]] et la jeune femme au fond du bar, un [[soda-&gt; Soda]]... Mais que choisir ? </tw-passagedata><tw-passagedata pid="70" name=" Vodka" tags="" position="4067,359" size="100,100">&lt;img src=&quot;image/vodka.png&quot; height=&quot;500px&quot; width=&quot;auto&quot;&gt;
+
+Tu demandes une bouteille de vodka entière au serveurotron, ça devrait être assez fort pour te détendre un peu. Il te la sert sans broncher puis tu finis la bouteille d&#39;une seule traite.
+
+Souhaites-tu que j&#39;active ma fonction Alcoolémie.Haute() ?
+[[Oui-&gt; Alcool]]           [[Non-&gt; Sobre]]</tw-passagedata><tw-passagedata pid="71" name=" Bière" tags="" position="3957,359" size="100,100">&lt;img src=&quot;image/beer.png&quot; height=&quot;500px&quot; width=&quot;auto&quot;&gt;
+
+Tu demandes une bière au serveurotron, et il te la sert rapidement. Tu la bois en un seul coup : maintenant tu es prêt à aller [[parler-&gt; Parler H]].</tw-passagedata><tw-passagedata pid="72" name=" Soda" tags="" position="3844,360" size="100,100">&lt;img src=&quot;image/pepsi.png&quot; height=&quot;500px&quot; width=&quot;auto&quot;&gt;
+
+Tu demandes un coca au serveurotron, mais il t&#39;interromps et te dit &quot;Du pepsi ça ira ?&quot;. Tu es déçu mais tu accepte. Maintenant que tu agis comme un vrai humain, tu es prêt à aller te [[sociabiliser-&gt; Parler F]].</tw-passagedata><tw-passagedata pid="73" name=" Alcool" tags="" position="4194,422" size="100,100">(set: $alcool to &quot;oui&quot;)
+(set: $chance = (random:1,2))
+function Alcoolémie.Haute() activée;
+
+|next)[
+*Hip* Bon mon gras... mon gARS ! *Hip* Tu peux le faire, alleeez alleeeez ALLEZ t&#39;es un mec cuoreuga... COURAGEUX ! Va parler (if: $chance is 1)[ à la [[fille-&gt; Parler F]] ](else:)[au [[bonhomme-&gt; Parler H]]].
+]
+{(live: 2s)[
+	(show: ?next)
+	(stop:)
+]}</tw-passagedata><tw-passagedata pid="74" name=" Sobre" tags="" position="4195,295" size="100,100">Très bien, je continuerais à te parler normalement. Mais maintenant passons aux choses serieuses, qui pourrait devenir ton nouveau meilleur ami ? L&#39;[[homme au comptoir-&gt; Parler H]] ou la [[jeune femme-&gt; Parler F]] ?</tw-passagedata><tw-passagedata pid="75" name=" Parler H 2" tags="" position="3963,605" size="100,100">(if: $alcool is &quot;oui&quot;)[Maintenant qu&#39;tu l&#39;a secoussé... euh SECOUÉ ! Y te tape avec sa buotille.. BOUTEILLE !
+|next)[
+function Alcoolémie.Haute() désactivée;
+]
+{(live: 4s)[
+	(show: ?next)
+	(stop:)
+]}
+|next2)[
+Sa bouteille était encore pleine. Il a taché tes beaux vêtements.
+Il te lance ensuite un cruel *&quot;Tu t&#39;es pris pour qui le robot là ?&quot;*
+]
+{(live: 6s)[
+	(show: ?next2)
+	(stop:)
+]}
+|next3)[
+[[function Coeur.Brisé() activée;-&gt; Morale]]
+]
+{(live: 9s)[
+	(show: ?next3)
+	(stop:)
+]}](else:)[L&#39;homme se retourne vers toi et te lance un cruel *&quot;J&#39;veux pas être ami avec un foutu robot moi&quot;*
+|next4)[
+[[function Coeur.Brisé() activée;-&gt; Morale]]
+]
+{(live: 4s)[
+	(show: ?next4)
+	(stop:)
+]}]</tw-passagedata><tw-passagedata pid="76" name=" Parler F 2" tags="" position="3964,717" size="100,100">(if: $alcool is &quot;oui&quot;)[*Hip* Elle te balance son vreer... VERRE !
+|next)[
+function Alcoolémie.Haute() désactivée;
+]
+{(live: 4s)[
+	(show: ?next)
+	(stop:)
+]}
+|next2)[
+Elle a taché tes beaux vêtements avec son soda. Maintenant elle rit en prenant une photo.
+Tu apperçois la photo avec, juste en dessous, #Loser #LesRobotsSontNuls #InstaPicOfTheDay.
+]
+{(live: 6s)[
+	(show: ?next2)
+	(stop:)
+]}
+|next3)[
+[[function Coeur.Brisé() activée;-&gt; Morale]]
+]
+{(live: 12s)[
+	(show: ?next3)
+	(stop:)
+]}](else:)[La jeune femme lève les yeux et te lance le contenu de son verre. Elle prends ensuite une photo de toi avec tes habits tâchés, en riant aux éclats.
+Tu apperçois la photo avec, juste en dessous, #Loser #LesRobotsSontNuls #InstaPicOfTheDay.
+|next4)[
+[[function Coeur.Brisé() activée;-&gt; Morale]]
+]
+{(live: 8s)[
+	(show: ?next4)
+	(stop:)
+]}]</tw-passagedata><tw-passagedata pid="77" name=" Morale" tags="Note" position="4108,649" size="100,100">011101010010010000101001001010001010010010010010100100101001010010001010001
+
+&lt;span id=&quot;comment&quot;&gt;//Résultat de l&#39;enquête de terrain&lt;/span&gt;
+
+function &lt;span id=&quot;function&quot;&gt;Conclusion()&lt;/span&gt;;
+Variable Humain est corrompu;
+Variable Humain aime boire et siffler;
+
+|next)[
+Variable Humain n&#39;aime pas &lt;span id=&quot;function&quot;&gt;C-69&lt;/span&gt;;
+]
+{(live: 10s)[
+	(show: ?next)
+	(stop:)
+]}
+
+011101010010010000101001001010001010010010010010100100101001010010001010001</tw-passagedata></tw-storydata>
+
